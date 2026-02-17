@@ -56,19 +56,6 @@ urlpatterns = [
         RedirectView.as_view(url="/%(path)s", permanent=True),
     ),
     re_path(
-        r"^owning-a-home/static/(?P<path>.*)$",
-        RedirectView.as_view(
-            url="/static/owning-a-home/static/%(path)s", permanent=True
-        ),
-    ),
-    re_path(
-        r"^owning-a-home/explore-rates/",
-        TemplateView.as_view(
-            template_name="owning-a-home/explore-rates/index.html"
-        ),
-        name="explore-rates",
-    ),
-    re_path(
         r"^know-before-you-owe/$",
         TemplateView.as_view(template_name="know-before-you-owe/index.html"),
         name="know-before-you-owe",
