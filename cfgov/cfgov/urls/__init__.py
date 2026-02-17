@@ -222,8 +222,6 @@ urlpatterns = [
         ),
         name="complaint-search",
     ),
-    re_path(r"^oah-api/rates/", include("ratechecker.urls")),
-    re_path(r"^oah-api/county/", include("countylimits.urls")),
     re_path(
         r"^find-a-housing-counselor/$",
         HousingCounselorView.as_view(),

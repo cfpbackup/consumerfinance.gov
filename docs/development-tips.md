@@ -70,7 +70,7 @@ The structure looks like this:
 - Apps use a Jinja template that extends the `base.html`
   template used by the rest of the site.
   This template would reside in `cfgov/jinja2/[project namespace]/index.html`
-  or similar (for example, [owning-a-home](https://github.com/cfpb/consumerfinance.gov/blob/main/cfgov/jinja2/owning-a-home/explore-rates/index.html)).
+  or similar (for example, [know before you owe](https://github.com/cfpb/consumerfinance.gov/blob/main/cfgov/jinja2/know-before-you-owe/index.html)).
 
 !!! note
 
