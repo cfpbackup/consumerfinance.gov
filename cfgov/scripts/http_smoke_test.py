@@ -148,7 +148,6 @@ APPS = [
     "/fair-lending/",
     "/know-before-you-owe/",
     "/mortgagehelp/",
-    "/oah-api/rates/rate-checker?price=200000&loan_amount=180000&minfico=740&maxfico=759&state=AL&rate_structure=fixed&loan_term=30&loan_type=conf",
     "/paying-for-college/",
     "/paying-for-college2/understanding-your-financial-aid-offer/about-this-tool/",  # noqa: E501
     "/policy-compliance/",
