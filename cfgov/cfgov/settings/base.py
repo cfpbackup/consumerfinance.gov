@@ -108,9 +108,7 @@ INSTALLED_APPS = (
     "wagtailcharts",
     # Satellites
     "complaint_search",
-    "countylimits",
     "mptt",
-    "ratechecker",
     "rest_framework",
     "wagtail_modeladmin",
     "wagtail_draftail_anchors",
@@ -633,8 +631,6 @@ PARSE_LINKS_EXCLUSION_LIST = [
     r"^/login/",
     # Regulations pages that have their own link markup
     r"^/policy-compliance/rulemaking/regulations/\d+/",
-    # DjangoRestFramework API pages where link icons are intrusive
-    r"^/oah-api/",
 ]
 
 # Required by django-extensions to determine the execution directory used by

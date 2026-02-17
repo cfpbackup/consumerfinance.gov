@@ -16,7 +16,6 @@ const styledApps = [
   'form-explainer',
   'homepage',
   'know-before-you-owe',
-  'owning-a-home',
   'paying-for-college',
   'prepaid-agreements',
   'regulations3k',

@@ -8,12 +8,10 @@ for https://www.consumerfinance.gov but are not included in consumerfinance.gov.
 Most but not all of these repositories can be run or tested without needing to
 set up the full website.
 
-We have six satellite apps that are maintained outside of the consumerfinance.gov codebase:
+We have two satellite apps that are maintained outside of the consumerfinance.gov codebase:
 
 - [ccdb5-api](https://github.com/cfpb/ccdb5-api)
 - [ccdb5-ui](https://github.com/cfpb/ccdb5-ui)
-- [owning-a-home-api](https://github.com/cfpb/owning-a-home-api)
-- [teachers-digital-platform](https://github.com/cfpb/teachers-digital-platform)
 
 These satellite apps are imported into consumerfinance.gov as part of the project
 [requirements files](https://github.com/cfpb/consumerfinance.gov/blob/main/requirements/libraries.txt).

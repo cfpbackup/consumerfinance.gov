@@ -30,8 +30,6 @@ const jsPaths = [
   `${apps}/financial-well-being/js/results.js`,
   `${apps}/find-a-housing-counselor/js/common.js`,
   `${apps}/form-explainer/js/index.js`,
-  `${apps}/owning-a-home/js/common.js`,
-  `${apps}/owning-a-home/js/explore-rates/index.js`,
   `${apps}/paying-for-college/js/disclosures/index.js`,
   `${apps}/paying-for-college/js/college-costs.jsx`,
   `${apps}/prepaid-agreements/js/common.js`,
