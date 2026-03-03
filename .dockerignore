@@ -6,7 +6,6 @@
 !config
 !esbuild
 !requirements
-!static.in
 !scripts
 !npm-packages-offline-cache
 

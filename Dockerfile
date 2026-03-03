@@ -143,7 +143,6 @@ RUN pip install -r requirements/local.txt
 # Note: by specifying specific files we enable this layer to be cached if
 # these files do not change.
 COPY cfgov ./cfgov/
-COPY static.in ./static.in/
 COPY docker-entrypoint.sh ./docker-entrypoint.sh
 COPY --from=node-builder ${APP_HOME} ${APP_HOME}
 
@@ -171,7 +170,6 @@ ENV ALLOWED_HOSTS='["*"]'
 
 # Copy the application code over
 COPY cfgov ./cfgov/
-COPY static.in ./static.in/
 COPY refresh-data.sh .
 COPY dump-data.sh .
 COPY initial-data.sh .
