@@ -62,7 +62,7 @@ Feel free to delete this section if not applicable to this PR.
 
 #### Browser testing
 
-Check the current browser support cutoff list](https://cfpb.github.io/consumerfinance.gov/browser-support#current-browser-support-metrics) for browsers that are advisable
+Check the [current browser support cutoff list](https://cfpb.github.io/consumerfinance.gov/browser-support#current-browser-support-metrics) for browsers that are advisable
 to prioritize for testing.
 
 #### Accessibility
