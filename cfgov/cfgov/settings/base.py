@@ -285,11 +285,6 @@ STATICFILES_DIRS = [
     PROJECT_ROOT.joinpath("static_built"),
 ]
 
-# Also include any directories under static.in
-STATICFILES_DIRS += [
-    d for d in REPOSITORY_ROOT.joinpath("static.in").iterdir() if d.is_dir()
-]
-
 # Collect static files into, and serve them from, cfgov/collectstatic,
 # unless otherwise specified via DJANGO_STATIC_ROOT.
 STATIC_ROOT = os.getenv("DJANGO_STATIC_ROOT", REPOSITORY_ROOT / "collectstatic")

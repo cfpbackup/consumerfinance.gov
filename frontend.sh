@@ -51,7 +51,6 @@ install() {
     echo "Installing frontend production dependencies…"
     yarn install --production
   fi
-  yarn fonts
 }
 
 # Run tasks to build the project for distribution.

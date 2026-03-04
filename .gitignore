@@ -111,7 +111,6 @@ cfgov/f/
 original_images/
 collectstatic/*
 develop-apps/*
-static.in/*/
 
 # Unit test / coverage reports #
 ################################

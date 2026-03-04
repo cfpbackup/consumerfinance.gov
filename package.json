@@ -62,7 +62,6 @@
   "scripts": {
     "preinstall": "node scripts/preinstall.js",
     "postinstall": "node scripts/yarn/apps-install && ./scripts/check-npm-cache.sh",
-    "fonts": "./scripts/fonts.sh",
     "lint": "./scripts/lint.sh",
     "jest": "node --experimental-vm-modules $(yarn bin jest)",
     "test": "yarn lint && yarn jest",

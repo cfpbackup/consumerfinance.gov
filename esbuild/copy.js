@@ -22,6 +22,8 @@ async function copy(baseConfig) {
     ...inDirs.map((v) => v.replace(resolvedBase, baseConfig.outdir)),
     // Create specific icon directory
     `${baseConfig.outdir}/icons`,
+    // Create specific fonts directory
+    `${baseConfig.outdir}/fonts`,
   ];
 
   // Make output directories
@@ -36,6 +38,12 @@ async function copy(baseConfig) {
   copyAll(
     `${modules}/@cfpb/cfpb-design-system/src/components/cfpb-icons/icons`,
     `${baseConfig.outdir}/icons`,
+  );
+
+  // Handle fonts
+  copyFile(
+    `${modules}/@fontsource-variable/source-sans-3/files/source-sans-3-latin-wght-normal.woff2`,
+    `${baseConfig.outdir}/fonts/source-sans-3-latin-wght-normal.woff2`,
   );
 }
 
