@@ -23,7 +23,7 @@ This quickstart requires a working Docker Desktop installation and git:
 - [Set up and run the Docker containers](https://cfpb.github.io/consumerfinance.gov/installation/#set-up-and-run-the-docker-containers):
 
   ```shell
-  docker-compose up
+  docker compose up
   ```
 
   This may take some time, as it will also
