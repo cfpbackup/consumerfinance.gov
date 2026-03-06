@@ -15,12 +15,12 @@
         <h1>Credit card agreement database</h1>
     </div>
     <div class="block">
-        <div id="ccagrsearch">
+        <div id="ccagrsearch"  class="cc-agreements--search">
             <h2>Agreements by '{{ issuer.name }}'</h2>
-            <table class="o-table o-table--striped o-table--stack-on-small u-w100pct">
+            <table class="o-table o-table--striped o-table--stack-on-small o-table--fixed-layout u-w100pct">
                 <thead>
                     <tr>
-                        <th>Issuer</th>
+                        <th class="u-w20pct">Issuer</th>
                         <th>Agreement description</th>
                         <th class="u-w20pct">Download</th>
                     </tr>
@@ -33,7 +33,7 @@
                             {{ result.issuer.name }}
                         </td>
                         <td data-label="Agreement description">
-                            {{ result.description }}
+                            <div class="result-description">{{ result.description }}</div>
                         </td>
                         <td class="u-w20pct" data-label="Download">
                             <a href="{{ result.uri }}">
