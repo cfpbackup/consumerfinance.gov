@@ -1,4 +1,4 @@
-import cache from './session-storage';
+import cache from '../../../../js/modules/util/web-storage-proxy';
 
 let DATA_SOURCE_BASE = 'https://files.consumerfinance.gov/data/';
 
@@ -14,13 +14,14 @@ const getData = (sources) => {
       url = DATA_SOURCE_BASE + url.replace('.csv', '.json');
     }
 
-    if (cache.getItem(url)) {
-      return Promise.resolve(cache.getItem(url));
+    const cacheItem = JSON.parse(cache.getItem(url));
+    if (cacheItem) {
+      return Promise.resolve(cacheItem);
     }
 
     return fetch(url).then((resp) => {
       return resp.json().then((data) => {
-        cache.setItem(url, data);
+        cache.setItem(url, JSON.stringify(data));
         return data;
       });
     });
