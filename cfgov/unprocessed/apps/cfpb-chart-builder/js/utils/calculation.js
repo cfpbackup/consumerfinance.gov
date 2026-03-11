@@ -13,7 +13,9 @@
 function convertDate(date) {
   let humanFriendly = null;
   let timestamp = null;
+  // eslint-disable-next-line no-useless-assignment
   let month = null;
+  // eslint-disable-next-line no-useless-assignment
   let year = null;
   const months = [
     'January',

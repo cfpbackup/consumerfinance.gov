@@ -226,7 +226,7 @@ const metricView = {
    * @returns {string} Classes to add to the notification box
    */
   getNotifications: function (metricKey) {
-    let classes = 'cf-notification ';
+    let classes;
     const standingClasses = {
       same: 'metric__notification--same',
       better: 'metric__notification--better',

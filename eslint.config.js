@@ -33,7 +33,7 @@ export default [
           moduleDirectory: ['node_modules'],
         },
       },
-      react: { version: 'detect' },
+      react: { version: '19' },
     },
     // Some plugins are automatically included.
     // plugins: {},

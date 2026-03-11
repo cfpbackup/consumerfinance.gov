@@ -42,8 +42,6 @@ function calculateDirectLoanDebt(
     2: 'yearThree',
   };
   let progress = getStateValue('programProgress');
-  let percentSub = 1;
-  let percentUnsub = 1;
   let subPrincipal = 0;
   let unsubPrincipal = 0;
   let unsubInterest = 0;
@@ -64,8 +62,8 @@ function calculateDirectLoanDebt(
   }
 
   // Determine percent of borrowing versus caps
-  percentSub = directSub / subCaps[yearMap[progress]];
-  percentUnsub = directUnsub / totalCaps[yearMap[progress]];
+  const percentSub = directSub / subCaps[yearMap[progress]];
+  const percentUnsub = directUnsub / totalCaps[yearMap[progress]];
 
   /* Iterate through each year of the program
      Note that "progress" refers to number of years completed, thus a user has 0 progress

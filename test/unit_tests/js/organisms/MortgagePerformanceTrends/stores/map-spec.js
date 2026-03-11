@@ -11,9 +11,8 @@ describe('Mortgage Performance map store', () => {
   });
 
   it('should inherit helper methods', () => {
-    let UNDEFINED;
     const mockData = {
-      date: UNDEFINED,
+      date: undefined,
       geo: { type: 'state', id: null, name: null },
       isLoadingMetros: false,
       isLoadingCounties: false,

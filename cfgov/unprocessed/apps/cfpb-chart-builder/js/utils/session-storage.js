@@ -10,6 +10,7 @@
    ========================================================================= */
 
 // Default storage type.
+// eslint-disable-next-line no-unassigned-vars
 let _storage;
 
 /**

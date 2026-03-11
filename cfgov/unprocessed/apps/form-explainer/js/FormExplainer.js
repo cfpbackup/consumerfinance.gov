@@ -11,8 +11,6 @@ const NO_OP = () => {
   // Placeholder function meant to be overridden.
 };
 
-let UNDEFINED;
-
 /**
  * FormExplainer
  * @class
@@ -33,7 +31,7 @@ class FormExplainer {
    */
   init() {
     this.setPageCount();
-    this.setCurrentPage(this.currentPage, UNDEFINED, false);
+    this.setCurrentPage(this.currentPage, undefined, false);
     this.setUIElements();
     this.initializeUI(this.elements);
     this.initializeEvents();

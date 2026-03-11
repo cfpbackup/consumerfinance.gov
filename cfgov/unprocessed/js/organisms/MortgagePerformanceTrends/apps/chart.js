@@ -94,6 +94,7 @@ MortgagePerformanceLineChart.prototype.onChange = function (event) {
       geoType = this.$container
         .querySelector('input[name="mp-line-chart_geo"]:checked')
         .id.replace('mp-line-chart_geo-', '');
+
       // TODO: Waaaaay too much code repetition here.
       if (geoType === 'state') {
         geoId = this.$state.value;
@@ -105,14 +106,19 @@ MortgagePerformanceLineChart.prototype.onChange = function (event) {
           includeComparison,
         );
       }
+
       if (geoType === 'metro') {
+        // eslint-disable-next-line no-useless-assignment
         geoId = this.$metro.value;
+        // eslint-disable-next-line no-useless-assignment
         geoName = this.$metro.options[this.$metro.selectedIndex].text;
         action = actions.fetchMetros(abbr, includeComparison);
       }
+
       if (geoType === 'non-metro') {
         geoId = this.$state.value;
         geoName = this.$state.options[this.$state.selectedIndex].text;
+        // eslint-disable-next-line no-useless-assignment
         action = actions.fetchNonMetros(abbr, includeComparison);
         action = actions.updateChart(
           geoId,
@@ -121,11 +127,15 @@ MortgagePerformanceLineChart.prototype.onChange = function (event) {
           includeComparison,
         );
       }
+
       if (geoType === 'county') {
+        // eslint-disable-next-line no-useless-assignment
         geoId = this.$county.value;
+        // eslint-disable-next-line no-useless-assignment
         geoName = this.$county.options[this.$county.selectedIndex].text;
         action = actions.fetchCounties(abbr, includeComparison);
       }
+
       break;
     case 'mp-line-chart-metro':
       geoId = this.$metro.value;

@@ -71,11 +71,10 @@ function commaSeparate(numberString) {
  */
 function formatUSD(opts) {
   const num = opts.amount;
-  let decPlaces = 0;
+  let decPlaces;
   let sign = '';
   let numericValue = num;
-  let stringValue = '';
-  let formattedString = '';
+  let stringValue;
 
   // Handle a String as input
   if (typeof num === 'string') {
@@ -102,7 +101,7 @@ function formatUSD(opts) {
   stringValue = commaSeparate(stringValue);
 
   // Construct the formattedString
-  formattedString = sign + '$' + stringValue;
+  const formattedString = sign + '$' + stringValue;
 
   return formattedString;
 }

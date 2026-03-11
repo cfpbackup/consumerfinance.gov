@@ -40,8 +40,7 @@ function VideoPlayer(element) {
    */
   function init() {
     if (!setInitFlag(_dom)) {
-      let UNDEFINED;
-      return UNDEFINED;
+      return undefined;
     }
 
     // Load the thumbnail from YouTube if we haven't specified one in the DOM.

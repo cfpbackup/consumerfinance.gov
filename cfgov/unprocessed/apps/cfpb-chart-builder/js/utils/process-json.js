@@ -2,8 +2,6 @@ import { convertDate } from './calculation';
 import getTileMapColor from './get-tile-map-color';
 import getTileMapState from './get-tile-map-state';
 
-let UNDEFINED;
-
 /**
  * Prepares mortgage delinquency data for Highcharts.
  * @param {number} datasets - Raw JSON from mortgage-performance API.
@@ -129,7 +127,7 @@ function processYoyData(data, group) {
  */
 function getProjectedTimestamp(valuesList, projectedRange = 6) {
   if (projectedRange === 0) {
-    return UNDEFINED;
+    return undefined;
   }
 
   const projectedMonth = valuesList[valuesList.length - projectedRange][0];
