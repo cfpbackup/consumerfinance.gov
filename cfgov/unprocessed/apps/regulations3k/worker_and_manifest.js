@@ -1,6 +1,5 @@
 import * as fs from 'fs';
 import fancyLog from 'fancy-log';
-// eslint-disable-next-line import/no-unresolved
 import workboxBuild from 'workbox-build';
 import environment from '../../../../config/environment.js';
 const { processed, unprocessed } = environment.paths;

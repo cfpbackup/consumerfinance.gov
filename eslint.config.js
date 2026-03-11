@@ -1,4 +1,5 @@
 // Run `npx @eslint/config-inspector` to inspect the config.
+import { defineConfig } from 'eslint/config';
 
 import globals from 'globals';
 import js from '@eslint/js';
@@ -9,7 +10,7 @@ import reactPlugin from 'eslint-plugin-react';
 import pluginCypress from 'eslint-plugin-cypress';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
-export default [
+export default defineConfig([
   { ignores: ['.tox', 'cfgov/static_built', 'collectstatic'] },
   js.configs.recommended,
   importPlugin.flatConfigs.recommended,
@@ -60,4 +61,4 @@ export default [
       radix: ['error'],
     },
   },
-];
+]);
