@@ -3,7 +3,8 @@ import { EmailSignup } from './email-signup-helpers.cy.js';
 const page = new EmailSignup();
 
 describe('Email Sign Up', () => {
-  it('Should Accept a valid email and return a success message', () => {
+  // Skip these tests for now while email signups are disabled
+  xit('Should Accept a valid email and return a success message', () => {
     // Arrange
     page.open();
     page.interceptGovDeliveryAPIRequests();
