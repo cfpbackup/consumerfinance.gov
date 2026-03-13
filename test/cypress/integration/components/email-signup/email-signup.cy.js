@@ -2,7 +2,8 @@ import { EmailSignup } from './email-signup-helpers.cy.js';
 
 const page = new EmailSignup();
 
-describe('Email Sign Up', () => {
+xdescribe('Email Sign Up', () => {
+  // Skip these tests for now while email signups are disabled
   it('Should Accept a valid email and return a success message', () => {
     // Arrange
     page.open();
