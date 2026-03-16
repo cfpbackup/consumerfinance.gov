@@ -68,7 +68,6 @@ RUN \
     && \
     apk add --no-cache --virtual .backend-deps \
         bash \
-        curl \
         postgresql \
     && \
     pip install --upgrade pip setuptools wheel && \
