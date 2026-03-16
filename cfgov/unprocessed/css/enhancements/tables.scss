@@ -21,6 +21,14 @@
       border-top: 1px solid var(--table-head-bg);
     }
   }
+  
+  &--fixed-layout {
+    table-layout: fixed;
+
+    td .result-description {
+      overflow-wrap: break-word;
+    }
+  }
 }
 
 .m-table-text-intro {
