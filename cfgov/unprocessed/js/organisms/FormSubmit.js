@@ -105,8 +105,7 @@ function FormSubmit(element, baseClass, opts) {
     if (typeof opts.validator === 'function') {
       return opts.validator(_cachedFields);
     }
-    let UNDEFINED;
-    return UNDEFINED;
+    return undefined;
   }
 
   /**

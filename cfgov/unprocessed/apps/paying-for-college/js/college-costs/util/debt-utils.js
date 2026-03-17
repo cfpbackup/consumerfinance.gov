@@ -28,7 +28,7 @@ function calcInterestAtGrad(amount, rate, programLength) {
  * @returns {number} monthly payment of loan for term
  */
 function calcMonthlyPayment(debt, rate, term) {
-  let monthly = 0;
+  let monthly;
 
   if (rate === 0) {
     monthly = debt / (term * 12);

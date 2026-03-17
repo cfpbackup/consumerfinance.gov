@@ -213,6 +213,7 @@ const financialModel = {
    * @returns {object} An object of errors found during enforcement
    */
   _enforceLimits: () => {
+    // eslint-disable-next-line no-useless-assignment
     let unsubCap = 0;
     const errors = {};
     const yearMap = {

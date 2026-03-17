@@ -295,7 +295,6 @@ function getYourEstimates() {
 function placeBenefitsText() {
   let fullAgeBenefitsValue = benefits['age' + benefits.fullAge];
   let benefitsValue = benefits['age' + selectedAge];
-  let $selectedBar = 5;
   let benefitsTop;
   let benefitsLeft;
   let fullAgeLeft;
@@ -309,7 +308,7 @@ function placeBenefitsText() {
 
   // set text and position for #benefits-text div
   $('#benefits-text').text(numToMoney(benefitsValue));
-  $selectedBar = $('[data-bar_age="' + selectedAge + '"]');
+  const $selectedBar = $('[data-bar_age="' + selectedAge + '"]');
   benefitsTop = parseInt($selectedBar.css('top'), 10);
   benefitsTop -= $('#benefits-text').height() + 10;
   benefitsLeft = parseInt($selectedBar.css('left'), 10);

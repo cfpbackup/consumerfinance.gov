@@ -165,8 +165,8 @@ function extractSeries(rawData, { series, xAxisSource, chartType }) {
  */
 function convertEpochToDateString(date) {
   let humanFriendly = null;
-  let month = null;
-  let year = null;
+  let month;
+  let year;
   const months = [
     'January',
     'February',

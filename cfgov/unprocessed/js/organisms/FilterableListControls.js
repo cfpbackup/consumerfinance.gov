@@ -31,8 +31,7 @@ function FilterableListControls(element) {
    */
   function init() {
     if (!setInitFlag(_dom)) {
-      let UNDEFINED;
-      return UNDEFINED;
+      return undefined;
     }
 
     _formModel = new FormModel(_form);

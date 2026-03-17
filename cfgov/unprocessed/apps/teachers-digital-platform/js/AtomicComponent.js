@@ -186,6 +186,7 @@ Object.assign(AtomicComponent.prototype, new EventObserver(), {
     let method;
     let match;
 
+    // eslint-disable-next-line no-useless-assignment
     events = events || (events = this.events);
     if (!events) {
       return this;

@@ -26,8 +26,7 @@ function FeaturedContentModule(element) {
    */
   function init() {
     if (!setInitFlag(_dom)) {
-      let UNDEFINED;
-      return UNDEFINED;
+      return undefined;
     }
 
     const videoPlayerDom = _dom.querySelector(`.${VideoPlayer.BASE_CLASS}`);

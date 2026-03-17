@@ -1,5 +1,3 @@
-let UNDEFINED;
-
 /* checkHudData() just makes sure your data has the correct structure
 before you start requesting properties that don't exist in _updateMap()
 */
@@ -11,7 +9,7 @@ before you start requesting properties that don't exist in _updateMap()
  * @returns {boolean} True if the data object is valid, false otherwise.
  */
 function checkHudData(data) {
-  if (data === null || data === 0 || data === UNDEFINED) {
+  if (data === null || data === 0 || data === undefined) {
     return false;
   } else if (
     {}.hasOwnProperty.call(data, 'error') ||

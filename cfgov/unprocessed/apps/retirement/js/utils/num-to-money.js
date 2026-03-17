@@ -17,6 +17,7 @@ function numToMoney(num) {
   const sign = num < 0 ? '-' : '';
 
   const numProc = String(
+    // eslint-disable-next-line no-useless-assignment
     parseInt((num = Math.abs(Number(num) || 0).toFixed(0)), 10),
   );
   let groups = 0;
