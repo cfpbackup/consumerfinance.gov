@@ -12,11 +12,8 @@
                   Note: The tagline only renders if the eyebrow is horizontal.
                   Defaults to false.
 
-   language:      The page's language value (used to display different
-                  information on Spanish pages). Defaults to English.
-
    ========================================================================== #}
-{% macro render( is_horizontal=false, language='en' ) %}
+{% macro render( is_horizontal=false ) %}
 {% import 'v1/includes/atoms/tagline.html' as tagline with context %}
     <div class="m-global-eyebrow
                 m-global-eyebrow--{{ 'horizontal' if is_horizontal
@@ -27,56 +24,6 @@
                 {{ tagline.render() }}
             {%- endif %}
             <div class="m-global-eyebrow__actions">
-                <ul class="m-list
-                           m-list--horizontal
-                           m-global-eyebrow__languages">
-                    <li class="m-list__item">
-                        {% if language == 'es' %}
-                        <a href="/" hreflang="en" lang="en">
-                            English
-                        </a>
-                        {% else %}
-                        <a href="/es/" hreflang="es" lang="es">
-                            Español
-                        </a>
-                        {% endif %}
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/zh/" hreflang="zh" lang="zh">
-                            中文
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/vi/" hreflang="vi" lang="vi">
-                            Tiếng Việt
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/ko/" hreflang="ko" lang="ko">
-                            한국어
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/tl/" hreflang="tl" lang="tl">
-                            Tagalog
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/ru/" hreflang="ru" lang="ru">
-                            Pусский
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/ar/" hreflang="ar" lang="ar">
-                            العربية
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/ht/" hreflang="ht" lang="ht">
-                            Kreyòl Ayisyen
-                        </a>
-                    </li>
-                </ul>
                 <span class="m-global-eyebrow__phone">
                     <a href="tel:+1-855-411-2372">(855) 411-2372</a>
                 </span>

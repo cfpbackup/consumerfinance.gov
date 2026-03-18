@@ -109,7 +109,6 @@ describe('Mega-Menu organism for site navigation', () => {
       menuMobile.firstLevelTrigger().should('not.have.attr', 'aria-hidden');
       // Then expected content is visible.
       menuMobile.firstPanel().should('contain.text', 'Submit a Complaint');
-      menuMobile.firstPanel().should('contain.text', 'Español');
       menuMobile.firstPanel().should('contain.text', '(855) 411-2372');
       // When the first child menu is clicked.
       menuMobile.firstLevelTrigger().click();
