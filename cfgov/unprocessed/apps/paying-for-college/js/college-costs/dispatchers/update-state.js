@@ -6,7 +6,7 @@ import { stateModel } from '../models/state-model.js';
 const updateState = {
   /**
    * activeSection - Update the app's active section
-   * @param {*} value - the value to be assigned
+   * @param {unknown} value - the value to be assigned
    * @param {boolean} popState - true if the update is the result of a popState event
    */
   activeSection: (value, popState) => {
@@ -34,7 +34,7 @@ const updateState = {
   /**
    * Update the stateModel's property to be equal to value
    * @param {string} prop - The property to update
-   * @param {*} value - The value to assign
+   * @param {unknown} value - The value to assign
    */
   byProperty: function (prop, value) {
     stateModel.setValue(prop, value);
