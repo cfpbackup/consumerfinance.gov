@@ -1,7 +1,8 @@
 import { defineConfig } from 'cypress';
-import cypressFailFast from 'cypress-fail-fast/src/plugin.js';
+import cypressFailFast from 'cypress-fail-fast/plugin';
 
 export default defineConfig({
+  allowCypressEnv: false,
   experimentalMemoryManagement: true,
   screenshotOnRunFailure: true,
   fixturesFolder: 'test/cypress/fixtures',

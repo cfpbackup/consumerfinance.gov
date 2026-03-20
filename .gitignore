@@ -124,7 +124,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 test/cypress/screenshots/
-cypress.config.mjs
+cypress.config.js
 
 # Temp data backups #
 ###############
