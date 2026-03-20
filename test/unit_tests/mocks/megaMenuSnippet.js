@@ -1870,52 +1870,6 @@ export default `
                     ">
 
             <div class="m-global-eyebrow__actions">
-                <ul class="m-list
-                           m-list--horizontal
-                           m-global-eyebrow__languages">
-                    <li class="m-list__item">
-
-                        <a href="/es/" hreflang="es" lang="es">
-                            Español
-                        </a>
-
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/zh/" hreflang="zh" lang="zh">
-                            中文
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/vi/" hreflang="vi" lang="vi">
-                            Tiếng Việt
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/ko/" hreflang="ko" lang="ko">
-                            한국어
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/tl/" hreflang="tl" lang="tl">
-                            Tagalog
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/ru/" hreflang="ru" lang="ru">
-                            Pусский
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/ar/" hreflang="ar" lang="ar">
-                            العربية
-                        </a>
-                    </li>
-                    <li class="m-list__item">
-                        <a href="/language/ht/" hreflang="ht" lang="ht">
-                            Kreyòl Ayisyen
-                        </a>
-                    </li>
-                </ul>
                 <span class="m-global-eyebrow__phone">
                     <a href="tel:+1-855-411-2372">(855) 411-2372</a>
                 </span>
