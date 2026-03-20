@@ -222,7 +222,7 @@ function getParentEls(element, filterNode) {
 
 /**
  * Check whether something is a NodeList, HTML element, or window.
- * @param {*} element - An object to check for element-ness.
+ * @param {unknown} element - An object to check for element-ness.
  */
 function _isEl(element) {
   return (

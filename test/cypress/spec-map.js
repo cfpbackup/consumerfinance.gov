@@ -208,6 +208,7 @@ const directories = [
 ];
 
 rl.on('line', (file) => {
+  // eslint-disable-next-line no-console
   console.log('File changed:', file);
   for (const [dList, candidate] of directories) {
     for (const directory of dList) {
@@ -225,9 +226,11 @@ rl.on('line', (file) => {
 rl.on('close', () => {
   const deduped = new Set(candidates);
   if (deduped.has('all')) {
+    // eslint-disable-next-line no-console
     console.log('\nChange requires full Cypress suite.');
     rewriteConfig(FULL_SUITE);
   } else {
+    // eslint-disable-next-line no-console
     console.log(
       '\nChange requires running Cypress tests in the following directories:\n' +
         [...deduped].join('\n'),

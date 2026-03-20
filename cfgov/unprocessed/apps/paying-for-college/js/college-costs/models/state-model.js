@@ -263,7 +263,7 @@ const stateModel = {
   /**
    * setValue - Public method to update model values
    * @param {string} name - the name of the property to update
-   * @param {*} value - the value to be assigned
+   * @param {unknown} value - the value to be assigned
    */
   setValue: function (name, value) {
     // In case this method gets used to update activeSection...
@@ -313,7 +313,7 @@ const stateModel = {
 
   /**
    * setActiveSection - Method to update the app's active section
-   * @param {*} value - the value to be assigned
+   * @param {unknown} value - the value to be assigned
    * @param {boolean} popState - true if the update is the result of a popState event
    */
   setActiveSection: function (value, popState) {
