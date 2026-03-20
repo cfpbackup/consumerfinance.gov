@@ -43,7 +43,7 @@
     "cypress": "15.12.0",
     "cypress-axe": "1.7.0",
     "cypress-fail-fast": "7.1.1",
-    "eslint": "10.0.3",
+    "eslint": "10.1.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-cypress": "6.2.0",
     "eslint-plugin-import": "2.32.0",
@@ -56,7 +56,7 @@
     "jest-environment-jsdom": "30.3.0",
     "jest-fetch-mock": "3.0.3",
     "prettier": "3.8.1",
-    "stylelint": "17.4.0",
+    "stylelint": "17.5.0",
     "stylelint-config-standard-scss": "17.0.0"
   },
   "scripts": {

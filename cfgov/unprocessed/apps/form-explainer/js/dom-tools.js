@@ -154,7 +154,7 @@ function getPreviousEls(element, filter = '*') {
 
 /**
  * Check whether something is a NodeList, HTML element, or window.
- * @param {*} element - Something, possibly a list, element or window instance.
+ * @param {unknown} element - Something, possibly a list, element or window instance.
  * @returns {boolean} True if `element` meets the criteria, false otherwise.
  */
 function _isEl(element) {
@@ -167,7 +167,7 @@ function _isEl(element) {
 
 /**
  * Check whether something is a NodeList, HTML element, or window.
- * @param {*} selector - Something, possibly a list, element or window instance.
+ * @param {unknown} selector - Something, possibly a list, element or window instance.
  */
 function hide(selector) {
   applyAll(getEls(selector), (element) =>
@@ -177,7 +177,7 @@ function hide(selector) {
 
 /**
  * Check whether something is a NodeList, HTML element, or window.
- * @param {*} selector - Something, possibly a list, element or window instance.
+ * @param {unknown} selector - Something, possibly a list, element or window instance.
  */
 function show(selector) {
   applyAll(getEls(selector), (element) =>

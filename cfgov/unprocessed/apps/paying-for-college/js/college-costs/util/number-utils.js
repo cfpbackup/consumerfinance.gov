@@ -48,7 +48,7 @@ function enforceRange(n, min, max) {
 
 /**
  * isNumeric - Verify that a value contains only number or decimal characters.
- * @param {*} value - Value to be checked.
+ * @param {unknown} value - Value to be checked.
  * @returns {boolean} True if value only contains numeric characters,
  *   false otherwise.
  */

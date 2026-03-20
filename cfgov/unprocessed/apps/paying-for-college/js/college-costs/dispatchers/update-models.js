@@ -48,7 +48,7 @@ function initializeFinancialValues() {
 /**
  * updateFinancial - Update a property of the financial model
  * @param {string} name - The name of the property to update
- * @param {*} value - The new value of the property
+ * @param {unknown} value - The new value of the property
  * @param {boolean} updateView - (defaults true) should view be updated?
  */
 function updateFinancial(name, value, updateView) {
@@ -58,7 +58,7 @@ function updateFinancial(name, value, updateView) {
 /**
  * createFinancial - Create a new financial property
  * @param {string} name - The name of the property to update
- * @param {*} value - The new value of the property
+ * @param {unknown} value - The new value of the property
  */
 function createFinancial(name, value) {
   financialModel.createFinancialProperty(name, value);
@@ -74,7 +74,7 @@ function recalculateFinancials() {
 /**
  * updateExpense - Update a property of the expense model
  * @param {string} name - The name of the property to update
- * @param {*} value - The new value of the property
+ * @param {unknown} value - The new value of the property
  */
 function updateExpense(name, value) {
   expensesModel.setValue(name, value);
