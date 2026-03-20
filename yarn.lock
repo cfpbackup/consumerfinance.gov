@@ -2166,10 +2166,10 @@ cypress-axe@1.7.0:
   resolved "https://registry.yarnpkg.com/cypress-axe/-/cypress-axe-1.7.0.tgz#258c007db13c637eaffec1cf2765090b521c07a0"
   integrity sha512-zzJpvAAjauEB3GZl0KYXb8i3w6MztWAt2WM3czYTFyNVC30alDmqCm9E7GwZ4bgkldZJlmHakaVEyu73R5St4w==
 
-cypress-fail-fast@7.1.1:
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/cypress-fail-fast/-/cypress-fail-fast-7.1.1.tgz#4be6ddbed8c284358faf488c73b6bd87f69cda49"
-  integrity sha512-9qPXikVY20OWdc97DO2++0AS4IF9kB+vuPhP8/0wXchcnFIsiCiwvQhOEBSdVHr1mZi87h0Z8jYEB4VLPzNkGg==
+cypress-fail-fast@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/cypress-fail-fast/-/cypress-fail-fast-8.0.0.tgz#6384ac3a9f9c4b22ef6456021de2616bd8b5abdd"
+  integrity sha512-bvhdupwRJQqiRQmK/5AUeG6mkzAoOFbIkdpqYo5l3wRAugr/V+QQ7BB6N9Az7qpbQwDG8nvfRWi09+4kEI7jBA==
   dependencies:
     chalk "4.1.2"
 
