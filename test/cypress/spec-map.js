@@ -247,7 +247,7 @@ rl.on('close', () => {
  */
 function rewriteConfig(specPattern) {
   if (specPattern === '[]') specPattern = "'test/cypress/dummy.cy.js'";
-  const tmpl = readFileSync(path.join(rootdir, 'cypress.config.js'), {
+  const tmpl = readFileSync(path.join(rootdir, 'cypress.template.js'), {
     encoding: 'utf8',
   });
   const config = tmpl.replace(FULL_SUITE, specPattern);
