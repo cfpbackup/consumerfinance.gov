@@ -58,6 +58,15 @@ $min-app-width-px: 320px;
           // the focus state.
           min-width: 373px;
         }
+
+        .m-global-header-cta + .m-global-search {
+          // Match CTA offset from divider for search only when CTA is present.
+          padding-right: $margin-half-em;
+
+          .m-global-search__content {
+            right: $margin-half-em;
+          }
+        }
       }
     }
 
