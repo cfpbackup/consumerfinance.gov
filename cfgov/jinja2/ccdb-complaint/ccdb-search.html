@@ -6,7 +6,6 @@
 
 {% block css %}
     {{ super() }}
-    <link rel="stylesheet" href="{{ static('apps/ccdb-search/css/main.css') }}">
 {% endblock %}
 
 {% block desc %}
@@ -22,7 +21,10 @@
 {%- endblock %}
 
 {% block content_main %}
-  <div id="ccdb-ui-root">
+  <cfpb-ccdb-search
+    data-css-href="{{ static('apps/ccdb-search/css/main.css') }}"
+    data-mount-id="ccdb-ui-root"
+  >
     <div class="u-hide-if-js wrapper u-mt60 u-mb60">
       {% import 'v1/includes/molecules/notification.html' as notification with context %}
       {{ notification.render(
@@ -33,7 +35,7 @@
            [{'text': 'Download the data', 'url': '/data-research/consumer-complaints/#download-the-data' }]
       ) }}
     </div>
-  </div>
+  </cfpb-ccdb-search>
 {% endblock %}
 
 {% block javascript scoped %}
