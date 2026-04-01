@@ -3,7 +3,6 @@ import postcss from 'postcss';
 import cssnano from 'cssnano';
 import autoprefixer from 'autoprefixer';
 import * as sass from 'sass';
-import { pluginProcessIcons } from './postcss-process-icons.js';
 
 const pluginPostCssSass = () => ({
   name: 'postcss-sass',
@@ -18,13 +17,12 @@ const pluginPostCssSass = () => ({
         ],
       });
 
-      const result = await postcss([
-        autoprefixer,
-        pluginProcessIcons,
-        cssnano,
-      ]).process(sassResult.css, {
-        from: args.path,
-      });
+      const result = await postcss([autoprefixer, cssnano]).process(
+        sassResult.css,
+        {
+          from: args.path,
+        },
+      );
 
       // If the suffix is .component.scss, we're going to assume this
       // will be inlined into a web component, so we'll change the loader

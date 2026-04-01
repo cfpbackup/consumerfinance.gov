@@ -317,10 +317,10 @@
   resolved "https://registry.yarnpkg.com/@cfpb/cfpb-analytics/-/cfpb-analytics-0.3.2.tgz#3d1e8da7c05cd0d312ae86a3b64e88bc3c3fc12b"
   integrity sha512-0rjHPdAi4emgjMmzKSBHwwRhztxyEk3X8Zay0qRK9pATApsHqBjEJmTn5Npd1ponQQ1m5KEPo3g9kPequOQXSg==
 
-"@cfpb/cfpb-design-system@4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@cfpb/cfpb-design-system/-/cfpb-design-system-4.4.0.tgz#0051260f56cd4dffd1e9a10b531afa5c2f71a313"
-  integrity sha512-dqJTRM4LPORqJ0a2gZr/MACGHJciEcRBH5B9nx2a/vi5pVAwx/L5qCHfbvlSLLYbDvRloTtvgP2/mRs+ygZoJw==
+"@cfpb/cfpb-design-system@5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@cfpb/cfpb-design-system/-/cfpb-design-system-5.2.0.tgz#c047dafad80fb70c15e0f224abcb178676e42aed"
+  integrity sha512-MS2BEDreLfEAy0mIPH6yfHHo7HGg1GSKF6SqvCSert4tBTm1X1Egj9lgZmOoyL+PZF8/FAgCJj5wwNmoV4oigw==
   dependencies:
     "@fontsource-variable/source-sans-3" "5.2.9"
     tippy.js "6.3.7"
@@ -1837,9 +1837,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001735, caniuse-lite@^1.0.30001759, caniuse-lite@^1.0.30001774:
-  version "1.0.30001782"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001782.tgz"
-  integrity sha512-dZcaJLJeDMh4rELYFw1tvSn1bhZWYFOt468FcbHHxx/Z/dFidd1I6ciyFdi3iwfQCyOjqo9upF6lGQYtMiJWxw==
+  version "1.0.30001784"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001784.tgz"
+  integrity sha512-WU346nBTklUV9YfUl60fqRbU5ZqyXlqvo1SgigE1OAXK5bFL8LL9q1K7aap3N739l4BvNqnkm3YrGHiY9sfUQw==
 
 caseless@~0.12.0:
   version "0.12.0"
