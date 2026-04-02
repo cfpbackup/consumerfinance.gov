@@ -36,17 +36,17 @@ jobs:
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 2
 
     - name: Set up Node
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
           node-version: '24.x'
 
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: 3.13
 
@@ -70,7 +70,7 @@ jobs:
       run: ./scripts/cypress-fast-specs.sh
 
     - name: Run Cypress
-      uses: cypress-io/github-action@v6
+      uses: cypress-io/github-action@v7
       with:
         build: yarn build
         start: python cfgov/manage.py runserver 0.0.0.0:8000
@@ -80,7 +80,7 @@ jobs:
           MAPBOX_ACCESS_TOKEN:  ${{ secrets.MAPBOX_ACCESS_TOKEN }}
           CYPRESS_ENVIRONMENT: github
     - name: Store any Cypress failure screenshots
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       if: failure()
       with:
         name: cypress_failure_screenshots

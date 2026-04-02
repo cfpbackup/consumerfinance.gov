@@ -48,12 +48,12 @@ jobs:
         options: -e="discovery.type=single-node" --health-cmd="curl http://localhost:9200/_cluster/health" --health-interval=10s --health-timeout=5s --health-retries=10
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Check cache for gettext
         id: cache-gettext
         if: matrix.toxenv == 'validate-translations'
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ${{ github.workspace }}/gettext-install
           key: ${{ runner.os }}-gettext-0.25
@@ -83,12 +83,12 @@ jobs:
           sudo apt-get install python3.12-dev libxml2-dev libxslt-dev
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: 3.13
 
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "24.x"
 
@@ -111,7 +111,7 @@ jobs:
       - name: Store test coverage
         # Submit coverage from our prefered tox run only
         if: matrix.toxenv == 'unittest'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: backend_coverage
           path: ./coverage.xml
@@ -122,12 +122,12 @@ jobs:
       - backend
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           fetch-depth: 2
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: 3.13
 
