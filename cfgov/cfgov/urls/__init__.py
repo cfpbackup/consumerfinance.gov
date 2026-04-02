@@ -351,14 +351,6 @@ urlpatterns = [
         {"sitemaps": {"site": Sitemap}},
         name="sitemap",
     ),
-    re_path(
-        r"^regulations3k-service-worker.js$",
-        TemplateView.as_view(
-            template_name="regulations3k/regulations3k-service-worker.js",
-            content_type="application/javascript",
-        ),
-        name="regulations3k-service-worker.js",
-    ),
     # Explicitly redirect eRegulations URLs to Regulations3000
     re_path(r"^eregulations/.*", redirect_eregs, name="eregs-redirect"),
     # Manually enabled when Beta is being used for an external test.
