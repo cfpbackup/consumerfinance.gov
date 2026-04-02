@@ -6,8 +6,6 @@ import { styles, cssPaths } from './styles.js';
 import environment from '../config/environment.js';
 const { processed } = environment.paths;
 
-import { runWorkerAndManifest } from '../cfgov/unprocessed/apps/regulations3k/worker_and_manifest.js';
-
 const baseConfig = {
   logLevel: 'info',
   bundle: true,
@@ -39,7 +37,4 @@ const arg = process.argv.slice(2)[0];
   }
 
   await copy(baseConfig);
-
-  // Run app-specific scripts
-  runWorkerAndManifest();
 })();
