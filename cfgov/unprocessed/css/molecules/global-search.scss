@@ -134,6 +134,8 @@ $mobile-trigger-ht-px: 54px;
     padding-top: 6px;
     padding-bottom: 5px;
 
+    // Match CTA offset from divider.
+    padding-right: $margin-half-em;
     position: relative;
 
     overflow: hidden;
@@ -151,7 +153,7 @@ $mobile-trigger-ht-px: 54px;
     }
 
     &__content {
-      right: 0;
+      right: $margin-half-em;
       width: auto;
 
       // Add margin so that the focus rectangle is not cropped by

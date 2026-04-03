@@ -27,6 +27,9 @@ $min-app-width-px: 320px;
 
       > .m-global-search {
         float: right;
+        right: -(
+            math.div(math.div($grid-gutter-width, 2), $base-font-size-px) + em
+          );
 
         // Mobile only.
         @include respond-to-max($bp-xs-max) {
@@ -57,15 +60,6 @@ $min-app-width-px: 320px;
           // Width should visually be 370px, plus 3px to accommodate
           // the focus state.
           min-width: 373px;
-        }
-
-        .m-global-header-cta + .m-global-search {
-          // Match CTA offset from divider for search only when CTA is present.
-          padding-right: $margin-half-em;
-
-          .m-global-search__content {
-            right: $margin-half-em;
-          }
         }
       }
     }
