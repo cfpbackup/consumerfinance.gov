@@ -22,6 +22,9 @@ $min-app-width-px: 320px;
 
     > .wrapper > .m-global-search {
       float: right;
+      right: -(
+            math.div(math.div($grid-gutter-width, 2), $base-font-size-px) + em
+          );
 
       // Mobile only.
       @include respond-to-max($bp-xs-max) {
