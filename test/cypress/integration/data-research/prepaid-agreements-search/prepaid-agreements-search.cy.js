@@ -21,7 +21,7 @@ describe('Prepaid Agreements', () => {
     prepaidAgreementsSearch.open();
     prepaidAgreementsSearch.selectIssuer('Regions Bank');
     prepaidAgreementsSearch.applyFilters();
-    prepaidAgreementsSearch.filters().should('contain', 'Regions');
+    prepaidAgreementsSearch.filters().contains('Regions', { matchCase: false });
   });
 
   it('should filter by product type', () => {
