@@ -22,9 +22,6 @@ import './commands';
 // Import assertions
 import './assertions';
 
-// Require skip-test
-require('@cypress/skip-test/support');
-
 // Fail Cypress tests fast on the first failure.
 import 'cypress-fail-fast';
 

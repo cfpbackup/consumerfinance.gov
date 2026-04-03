@@ -30,7 +30,7 @@ export default defineConfig({
     specPattern: 'test/cypress/component/**/*.cy.{js,jsx,ts,tsx}',
     excludeSpecPattern: 'test/cypress/component/**/*-helpers.cy.js',
   },
-  env: {
+  expose: {
     ENVIRONMENT: 'local-machine',
   },
 });

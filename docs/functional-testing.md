@@ -82,7 +82,7 @@ Overall it lets our tests show what is intended to be happening on a page withou
 
 ### Skipping tests
 
-We use the [cypress-skip-test](https://github.com/cypress-io/cypress-skip-test/) plugin to define directly in the spec file under what conditions tests should run. The plugin lets you specify any tests that should not run or should only run in certain environments, on certain browsers, or at certain base URLs. While ideally we want all tests to run everywhere, skipping tests can be handy when you want to merge work-in-progress tests into `main` but skip them in CI/CD pipelines until they work is finished or when you want to temporarily skip a test that's failing while you debug it.
+We skip Cypress tests in a couple of ways when needed. Use `xdescribe` or `xit` to always skip tests. To skip tests in a particular environment, use `Cypress.expose('ENVIRONMENT')` to get the environment label, then conditionally run tests based on the environment (as we do in the [Mortgage Performance Trends tests](https://github.com/cfpb/consumerfinance.gov/blob/main/test/cypress/integration/data-research/mortgage-performance-trends/mortgage-performance-trends.cy.js), for example). While ideally we want all tests to run everywhere, skipping tests can be handy when you want to merge work-in-progress tests into `main` but skip them in CI/CD pipelines until they work is finished or when you want to temporarily skip a test that's failing while you debug it.
 
 ## Creating test data
 
