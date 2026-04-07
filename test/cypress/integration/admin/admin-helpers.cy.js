@@ -74,7 +74,9 @@ export class AdminPage {
   removeContact() {
     this.getFirstOptionsDropdown().click();
     cy.get('a[href^="/admin/snippets/v1/contact/delete/"]:first').click();
-    cy.get('form[action*="/admin/snippets/v1/contact/delete"] button[type="submit"]').click();
+    cy.get(
+      'form[action*="/admin/snippets/v1/contact/delete"] button[type="submit"]',
+    ).click();
   }
 
   addMortgageData(name) {
