@@ -89,7 +89,7 @@
 
 "@cfpb/ccdb5-ui@cfpb/ccdb5-ui#rad-geo-updates":
   version "2.16.0"
-  resolved "https://codeload.github.com/cfpb/ccdb5-ui/tar.gz/a0f36623e16dc6015edcde0c183cf27b576c0c79"
+  resolved "https://codeload.github.com/cfpb/ccdb5-ui/tar.gz/012ab8d2410dd42b29806b5be80ba6ea0186c31d"
   dependencies:
     "@cfpb/cfpb-design-system" "^5.2.0"
     "@cfpb/design-system-react" "^1.0.1"
