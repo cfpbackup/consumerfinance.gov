@@ -10,7 +10,7 @@
     "url": "https://cfpb.github.io/"
   },
   "dependencies": {
-    "@cfpb/ccdb5-ui": "2.16.0"
+    "@cfpb/ccdb5-ui": "cfpb/ccdb5-ui#rad-geo-updates"
   },
   "repository": {
     "type": "git",
