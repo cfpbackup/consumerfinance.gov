@@ -22,7 +22,10 @@ describe('Prepaid Agreements', () => {
     prepaidAgreementsSearch.selectIssuer('Regions Bank');
     prepaidAgreementsSearch.applyFilters();
     // Case can change on institutions, so we'll make the test case insensitive
-    prepaidAgreementsSearch.filters().invoke('text').should('match', /regions/i);
+    prepaidAgreementsSearch
+      .filters()
+      .invoke('text')
+      .should('match', /regions/i);
   });
 
   it('should filter by product type', () => {
