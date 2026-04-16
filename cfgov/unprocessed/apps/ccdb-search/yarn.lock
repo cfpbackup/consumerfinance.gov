@@ -87,9 +87,10 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
-"@cfpb/ccdb5-ui@cfpb/ccdb5-ui#rad-geo-updates":
-  version "2.16.0"
-  resolved "https://codeload.github.com/cfpb/ccdb5-ui/tar.gz/4122ed8107cc3dff9f969bd72837c77a76ab6f50"
+"@cfpb/ccdb5-ui@2.16.1":
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/@cfpb/ccdb5-ui/-/ccdb5-ui-2.16.1.tgz#e0c80fcbe3271d64aa4ff8a33d8a488de5a35245"
+  integrity sha512-hP+YI4ipOCeGc63EGQXE9YNBg5mjEh/vekMQrKusr/NCtZ+k0MU7AgWwFVb/m1BWfaQljIiI2d3ai5N6XZacGg==
   dependencies:
     "@cfpb/cfpb-design-system" "^5.3.1"
     "@cfpb/design-system-react" "^1.0.2"
