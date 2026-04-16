@@ -89,10 +89,10 @@
 
 "@cfpb/ccdb5-ui@cfpb/ccdb5-ui#rad-geo-updates":
   version "2.16.0"
-  resolved "https://codeload.github.com/cfpb/ccdb5-ui/tar.gz/012ab8d2410dd42b29806b5be80ba6ea0186c31d"
+  resolved "https://codeload.github.com/cfpb/ccdb5-ui/tar.gz/d98f8f75431f832e67d8282e4c853ee2150fed91"
   dependencies:
-    "@cfpb/cfpb-design-system" "^5.2.0"
-    "@cfpb/design-system-react" "^1.0.1"
+    "@cfpb/cfpb-design-system" "^5.3.1"
+    "@cfpb/design-system-react" "^1.0.2"
     "@reduxjs/toolkit" "^2.11.2"
     britecharts "git+https://github.com/cfpb/cfpb-britecharts.git#v2.6"
     d3 "^7.9.0"
@@ -113,7 +113,7 @@
     react-redux "^9.2.0"
     react-router "^7.14.1"
 
-"@cfpb/cfpb-design-system@^5.2.0":
+"@cfpb/cfpb-design-system@^5.3.1":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@cfpb/cfpb-design-system/-/cfpb-design-system-5.3.1.tgz#d824ad99fbb3d0bcacf9f082476a067058a301af"
   integrity sha512-O3uHxdcXius+6CxN8b9Cz64zvwvfg8bVGHif9Svet3+KyoiPXRN7ft3DlAePsU8ewhUkjPnPcziiMOXv8U0hYQ==
@@ -121,10 +121,10 @@
     "@fontsource-variable/source-sans-3" "5.2.9"
     tippy.js "6.3.7"
 
-"@cfpb/design-system-react@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@cfpb/design-system-react/-/design-system-react-1.0.1.tgz#5c3ca74ca3b61b090220a6929ccd99ccd8d4100e"
-  integrity sha512-Z2oG7rMyQtn0roTNWPtGHWGKVdAEwHYKWBe3vSmdobUBYZDg2RjvqvZ0LLZst/DqFuNNSP+eoXp8T6m1cHd/GQ==
+"@cfpb/design-system-react@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@cfpb/design-system-react/-/design-system-react-1.0.2.tgz#249c69ae134216f2fbb47a83d498ce1df3e71aa1"
+  integrity sha512-1U3Ap22iUROh9b7SWqynG7XLNRDGgQyIrerciaU7/h9NC6fLsu4Ybw/C+qm36H4QVIur4MjdgwWdDh91iapEFQ==
   dependencies:
     react-select "^5.10.2"
 
