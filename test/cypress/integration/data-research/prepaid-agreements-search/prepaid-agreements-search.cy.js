@@ -21,7 +21,11 @@ describe('Prepaid Agreements', () => {
     prepaidAgreementsSearch.open();
     prepaidAgreementsSearch.selectIssuer('Regions Bank');
     prepaidAgreementsSearch.applyFilters();
-    prepaidAgreementsSearch.filters().should('contain', 'Regions');
+    // Case can change on institutions, so we'll make the test case insensitive
+    prepaidAgreementsSearch
+      .filters()
+      .invoke('text')
+      .should('match', /regions/i);
   });
 
   it('should filter by product type', () => {

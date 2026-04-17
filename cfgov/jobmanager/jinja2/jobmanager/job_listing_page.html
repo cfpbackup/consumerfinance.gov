@@ -22,7 +22,7 @@
         'salary_min': page.salary_min,
         'salary_max': page.salary_max,
         'salary_is_hourly': page.salary_is_hourly,
-        'applicant_types': usajobs_links | map( attribute='applicant_type' )
+        'applicant_types': usajobs_links | map( attribute='applicant_type' ) | list
     } %}
         {% include 'jobmanager/job_listing_details.html' %}
     {% endwith %}

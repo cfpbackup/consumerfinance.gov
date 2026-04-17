@@ -18,7 +18,7 @@ export class PrepaidAgreementsSearch {
 
   selectIssuer(issuer) {
     cy.get('#issuer_name').type(issuer);
-    cy.get(`input[value="${issuer}"]`).check({ force: true });
+    cy.get(`input[value="${issuer}" i]`).check({ force: true });
   }
 
   filtersForm() {

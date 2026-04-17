@@ -8,6 +8,8 @@
     em;
   padding-top: 13px;
   padding-bottom: 11px;
+  margin-left: math.div(math.div($grid-gutter-width, 2), $base-font-size-px) +
+    em;
 
   a {
     font-weight: 500;

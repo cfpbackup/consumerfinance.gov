@@ -136,13 +136,6 @@ cfgov/paying_for_college/fixtures/national_stats_backup.json
 .vscode
 local-storage.json
 
-# Auto-generated service workers #
-##################################
-cfgov/regulations3k/jinja2/regulations3k/regulations3k-service-worker.js
-cfgov/regulations3k/jinja2/regulations3k/regulations3k-service-worker.js.map
-cfgov/regulations3k/jinja2/regulations3k/workbox-*.js
-cfgov/regulations3k/jinja2/regulations3k/workbox-*.js.map
-
 # Local Docker-Compose Files #
 ##############################
 docker-compose.pgadmin.yml

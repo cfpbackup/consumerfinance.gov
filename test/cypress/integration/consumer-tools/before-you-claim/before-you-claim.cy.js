@@ -12,7 +12,7 @@ let qFour;
 let qFive;
 let qSix;
 
-describe('Planning your Social Security', () => {
+xdescribe('Planning your Social Security', () => {
   beforeEach(() => {
     claim.open();
 

@@ -33,13 +33,6 @@ const bindAnalytics = () => {
  * init - Initialize everything on page load.
  */
 const init = () => {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-      .register('/regulations3k-service-worker.js')
-      .catch((err) => {
-        console.error('Error during service worker registration:', err);
-      });
-  }
   if (navHeader) {
     navHeader.classList.add('o-expandable__target--collapsed');
     navItems.classList.add('u-hide-on-stacked');
