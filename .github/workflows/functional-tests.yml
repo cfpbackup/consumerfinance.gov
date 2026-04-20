@@ -70,7 +70,7 @@ jobs:
       run: ./scripts/cypress-fast-specs.sh
 
     - name: Run Cypress
-      uses: cypress-io/github-action@v7
+      uses: cypress-io/github-action@783cb3f07983868532cabaedaa1e6c00ff4786a8
       with:
         build: yarn build
         start: python cfgov/manage.py runserver 0.0.0.0:8000
