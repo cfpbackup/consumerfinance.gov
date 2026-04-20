@@ -204,7 +204,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "cfgov.wsgi.application"
 
-DATA_UPLOAD_MAX_NUMBER_FIELDS = 3000  # For heavy Wagtail pages
+# See https://docs.wagtail.org/en/latest/releases/
+# 6.4.html#data-upload-max-number-fields-update
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 10_000
 
 # Default database is PostgreSQL running on localhost.
 # Database name cfgov, username cfpb, password cfpb.
