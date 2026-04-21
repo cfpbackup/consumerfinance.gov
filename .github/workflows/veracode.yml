@@ -8,7 +8,7 @@ jobs:
     runs-on:
       - ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: Zip Scannable Files
         run: >
           find . -path '*test*' -prune -o \( -name '*.py' -o -name '*.js' -o
@@ -48,7 +48,7 @@ jobs:
           --fail_on_severity="Very High, High" --summary_output true
 
       - name: Archive Results.json & Results.txt from Veracode Static Pipeline Scanner
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: Veracode SAST Pipeline Results
           path: results.*
@@ -56,7 +56,7 @@ jobs:
     runs-on:
       - ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: SCA Scan
         env:
           SRCCLR_API_TOKEN: ${{secrets.SRCCLR_API_TOKEN}}
@@ -66,7 +66,7 @@ jobs:
           curl -sSL https://download.sourceclear.com/ci.sh | sh -s scan
           --json=SCA-App-Issues.json
       - name: Upload SCA issues artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: Veracode SCA Scan Results
           path: SCA-App-Issues.json
