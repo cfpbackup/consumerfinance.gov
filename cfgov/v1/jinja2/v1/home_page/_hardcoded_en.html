@@ -1,6 +1,6 @@
 {%- set hero = {
-    "heading": "<strong>On your side</strong> through life’s financial moments." | safe,
-    "body": "We’re the Consumer Financial Protection Bureau, a U.S. government agency dedicated to making sure you are treated fairly by banks, lenders and other financial institutions.",
+    "heading": "Fair banking for all Americans.",
+    "body": "We’re the Consumer Financial Protection Bureau, a U.S. government agency that promotes compliance with federal consumer financial laws and educates the public about consumer financial products and services.",
     "image": {
         "url": static( "apps/homepage/img/hero.jpg" ),
         "height": 575,
@@ -10,7 +10,7 @@
     "is_jumbo": true
 } -%}
 
-{%- set answers_heading = "Find answers to your money questions" -%}
+<!-- {%- set answers_heading = "Find answers to your money questions" -%}
 
 {%- set topics = {
     "cards": [
@@ -40,17 +40,17 @@
             "url": "/consumer-tools/",
         }
     ],
-} -%}
+} -%} -->
 
 <!-- {%- set highlights_heading = "Bureau highlights" -%} -->
 
 {%- set highlights = [
     {
-        "img_src": static( "apps/homepage/img/putting-green_housing-counselor.png" ),
+        "img_src": static( "apps/homepage/img/putting-green_finances-covid.png" ),
         "card_type": "highlight",
-        "heading": "Talk with an expert about your housing needs for free",
-        "link_text": "Find a housing counselor",
-        "link_url": "/find-a-housing-counselor/"
+        "heading": "Clear answers to your money questions",
+        "link_text": "Find your answers",
+        "link_url": "/ask-cfpb/"
     },
     {
         "img_src": static( "apps/homepage/img/putting-green_submit-a-complaint.png" ),
@@ -63,38 +63,40 @@
 
 {%- set announcements = [
     {
-        "heading": "The CFPB is standing up for you",
-        "content": "<ul><li><strong>6.8 million+</strong> consumer complaints sent for response</li><li><strong>$21 billion+</strong> in financial relief as a result of CFPB actions</li><li><strong>205 million+</strong> people eligible for financial relief</li></ul>" | safe,
-        "link_text": "",
-        "link_url": ""
+        "icon": "speech-bubble",
+        "heading": "Share your feedback",
+        "content": "The CFPB requests public comment on a variety of topics to inform our work.",
+        "link_text": "Explore the latest opportunities to comment",
+        "link_url": "/about-us/contact-us/"
     },
     {
-        "heading": "Protecting you from junk fees",
-        "content": "<p>The CFPB is working to save households billions of dollars a year by reducing exploitative junk fees charged by banks and financial companies.</p>" | safe,
-        "link_text": "Read about junk fees",
-        "link_url": "/rules-policy/junk-fees/"
+        "icon": "newspaper",
+        "heading": "News from the CFPB",
+        "content": "Learn about the latest actions and activities from across the CFPB.",
+        "link_text": "Enter the newsroom",
+        "link_url": "/about-us/newsroom/"
     }
 ] -%}
 
-{%- set breakout_cards_heading = "Get help planning for future goals" -%}
+{%- set breakout_cards_heading = "Help when you need it" -%}
 
 {%- set breakout_cards = [
     {
         "card_type": "breakout",
-        "link_text": "Buy a house",
-        "link_url": "/owning-a-home/",
+        "link_text": "Servicemembers and veterans",
+        "link_url": "/consumer-tools/educator-tools/servicemembers/",
         "img_src": static( "apps/homepage/img/key-house.png" ),
     },
     {
         "card_type": "breakout",
-        "link_text": "Pay for college",
-        "link_url": "/paying-for-college/",
+        "link_text": "Older Americans",
+        "link_url": "/consumer-tools/educator-tools/resources-for-older-adults/",
         "img_src": static( "apps/homepage/img/graduate.png" ),
     },
     {
         "card_type": "breakout",
-        "link_text": "Get an auto loan",
-        "link_url": "/consumer-tools/getting-an-auto-loan/",
+        "link_text": "Find a free housing counselor",
+        "link_url": "/find-a-housing-counselor/",
         "img_src": static( "apps/homepage/img/key-car.png" )
     }
 ] -%}
