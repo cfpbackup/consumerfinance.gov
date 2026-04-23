@@ -87,12 +87,12 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.28.5"
 
-"@cfpb/ccdb5-ui@2.16.1":
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/@cfpb/ccdb5-ui/-/ccdb5-ui-2.16.1.tgz#e0c80fcbe3271d64aa4ff8a33d8a488de5a35245"
-  integrity sha512-hP+YI4ipOCeGc63EGQXE9YNBg5mjEh/vekMQrKusr/NCtZ+k0MU7AgWwFVb/m1BWfaQljIiI2d3ai5N6XZacGg==
+"@cfpb/ccdb5-ui@2.16.2":
+  version "2.16.2"
+  resolved "https://registry.yarnpkg.com/@cfpb/ccdb5-ui/-/ccdb5-ui-2.16.2.tgz#15908e9d788c0238e5048125d31b9b6db405c252"
+  integrity sha512-EcfO+eL15bZf0ZYxExAk3QSDUFE9QHT0HLnM+g1/HU5eE4iv+EZdnR9ntLAPTbi6cIBOLp1Icf0M2kUZH68Rjg==
   dependencies:
-    "@cfpb/cfpb-design-system" "^5.3.1"
+    "@cfpb/cfpb-design-system" "^5.3.2"
     "@cfpb/design-system-react" "^1.0.2"
     "@reduxjs/toolkit" "^2.11.2"
     britecharts "git+https://github.com/cfpb/cfpb-britecharts.git#v2.6"
@@ -112,12 +112,12 @@
     react-fast-compare "^3.2.2"
     react-modal "^3.16.3"
     react-redux "^9.2.0"
-    react-router "^7.14.1"
+    react-router "^7.14.2"
 
-"@cfpb/cfpb-design-system@^5.3.1":
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/@cfpb/cfpb-design-system/-/cfpb-design-system-5.3.1.tgz#d824ad99fbb3d0bcacf9f082476a067058a301af"
-  integrity sha512-O3uHxdcXius+6CxN8b9Cz64zvwvfg8bVGHif9Svet3+KyoiPXRN7ft3DlAePsU8ewhUkjPnPcziiMOXv8U0hYQ==
+"@cfpb/cfpb-design-system@^5.3.2":
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/@cfpb/cfpb-design-system/-/cfpb-design-system-5.3.2.tgz#77a4c07edd8be61465936208e49920c7b2457815"
+  integrity sha512-uJT0JKme/Agnj0SHSVmuauq0Mcvds+JHomuGTeO1AfY3F5Yg99EJJ/7kk9D+xVyL1r8HubNyc9wKS6iJzRok9w==
   dependencies:
     "@fontsource-variable/source-sans-3" "5.2.9"
     tippy.js "6.3.7"
@@ -808,9 +808,9 @@ function-bind@^1.1.2:
   integrity sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==
 
 hasown@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/hasown/-/hasown-2.0.2.tgz#003eaf91be7adc372e84ec59dc37252cedb80003"
-  integrity sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/hasown/-/hasown-2.0.3.tgz#5e5c2b15b60370a4c7930c383dfb76bf17bc403c"
+  integrity sha512-ej4AhfhfL2Q2zpMmLo7U1Uv9+PyhIZpgQLGT1F9miIGmiCJIoCgSmczFdrc97mWT4kVY72KA+WnnhJ5pghSvSg==
   dependencies:
     function-bind "^1.1.2"
 
@@ -1088,10 +1088,10 @@ react-redux@^9.2.0:
     "@types/use-sync-external-store" "^0.0.6"
     use-sync-external-store "^1.4.0"
 
-react-router@^7.14.1:
-  version "7.14.1"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-7.14.1.tgz#adf60e587ad7fb25bd8f33c443fb0e86cd4f051e"
-  integrity sha512-5BCvFskyAAVumqhEKh/iPhLOIkfxcEUz8WqFIARCkMg8hZZzDYX9CtwxXA0e+qT8zAxmMC0x3Ckb9iMONwc5jg==
+react-router@^7.14.2:
+  version "7.14.2"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-7.14.2.tgz#d86e5b01049365b2c982363ebd2baa4928824603"
+  integrity sha512-yCqNne6I8IB6rVCH7XUvlBK7/QKyqypBFGv+8dj4QBFJiiRX+FG7/nkdAvGElyvVZ/HQP5N19wzteuTARXi5Gw==
   dependencies:
     cookie "^1.0.1"
     set-cookie-parser "^2.6.0"
