@@ -5,3 +5,11 @@
 .field-admin_thumb {
   width: 100px;
 }
+
+/* Clear the float for the full-width result list so it doesn't overlap
+   with the pagination. */
+@media screen and (min-width: 50em) {
+  .modeladmin .result-list.col12 {
+    float: none;
+  }
+}
