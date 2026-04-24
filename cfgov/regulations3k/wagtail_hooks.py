@@ -1,40 +1,11 @@
 from datetime import date
 
-from django.utils.encoding import force_str
-
-from treemodeladmin.helpers import TreeAdminURLHelper
 from treemodeladmin.options import TreeModelAdmin
 from treemodeladmin.views import TreeIndexView
 from wagtail_modeladmin.options import modeladmin_register
 
 from regulations3k.copyable_modeladmin import CopyableModelAdmin
 from regulations3k.models import EffectiveVersion, Part, Section, Subpart
-
-
-class RegsURLHelper(TreeAdminURLHelper):
-    def crumb(
-        self, parent_field=None, parent_instance=None, specific_instance=None
-    ):
-        """Override the URL helper's crumb method to shorten reg model crumbs.
-
-        The regulation models include their "parent" model's string
-        representation within their own string representation. This is useful
-        when referencing a model without context, but not so useful in
-        breadcrumbs. This method will remove the "[Parent], " from the string
-        if the specific_instance and parent_instance are provided.
-        """
-        index_url, crumb_text = super().crumb(
-            parent_field=parent_field,
-            parent_instance=parent_instance,
-            specific_instance=specific_instance,
-        )
-
-        if specific_instance is not None and parent_instance is not None:
-            crumb_text = force_str(specific_instance).replace(
-                force_str(parent_instance) + ", ", ""
-            )
-
-        return (index_url, crumb_text)
 
 
 class SectionPreviewIndexView(TreeIndexView):
@@ -77,7 +48,6 @@ class SectionModelAdmin(TreeModelAdmin):
     search_fields = ("label", "title")
     parent_field = "subpart"
     index_view_class = SectionPreviewIndexView
-    url_helper_class = RegsURLHelper
 
 
 class SubpartModelAdmin(TreeModelAdmin):
@@ -89,7 +59,6 @@ class SubpartModelAdmin(TreeModelAdmin):
     child_model_admin = SectionModelAdmin
     parent_field = "version"
     ordering = ["subpart_type", "title"]
-    url_helper_class = RegsURLHelper
 
 
 class EffectiveVersionModelAdmin(CopyableModelAdmin):
@@ -100,7 +69,6 @@ class EffectiveVersionModelAdmin(CopyableModelAdmin):
     child_field = "subparts"
     child_model_admin = SubpartModelAdmin
     parent_field = "part"
-    url_helper_class = RegsURLHelper
 
     def copy(self, instance):
         instance_pk = instance.pk
@@ -141,4 +109,3 @@ class PartModelAdmin(TreeModelAdmin):
     list_display = ("part_number", "title", "short_name")
     child_field = "versions"
     child_model_admin = EffectiveVersionModelAdmin
-    url_helper_class = RegsURLHelper
