@@ -61,42 +61,28 @@ content__main--flush-inner
     {% import "v1/home_page/_hardcoded_" ~ language ~ ".html" as hardcoded with context %}
 
     <section class="block">
-        {{ card_group.render( {
-            'heading': hardcoded.breakout_cards_heading,
-            'type_group': 'column-3',
-            'type_card': 'breakout',
-            'cards': hardcoded.breakout_cards
-        } ) }}
-    </section>
-
-    <hr>
-
-    <section class="block">
         <div class="o-info-unit-group">
             <div class="content-l">
                 {% for announcement in hardcoded.announcements %}
-                <div class="content-l__col content-l__col-1-2">
+                <div class="content-l__col content-l__col-1-{{ hardcoded.announcements|count }}">
                     <div class="m-info-unit">
-                        {%- if announcement.link_url -%}
-                        <a class="m-info-unit__heading-link" href="{{ announcement.link_url }}">
-                        {%- endif -%}
-                            <div class="m-info-unit__heading-text">
-                                <h2>{{ svg_icon(announcement.icon) }} {{ announcement.heading }}</h2>
-                            </div>
-                        {%- if announcement.link_url -%}
-                        </a>
-                        {%- endif -%}
+                        <div class="m-info-unit__heading-text">
+                            <h2>{{ announcement.heading }}</h2>
+                        </div>
                         <div class="m-info-unit__content">
                             {{ announcement.content }}
-                            {%- if announcement.link_url -%}
+                            {%- if announcement.links -%}
                             <ul class="m-list m-list--links u-mt15">
+                                {% for link in announcement.links %}
                                 <li class="m-list__item">
                                     <a class="a-link a-link--jump"
-                                        href="{{ announcement.link_url }}">
+                                       href="{{ link.link_url }}">
                                         <span class="a-link__text">
-                                            {{ announcement.link_text }}
+                                            {{ link.link_text }}
                                         </span>
                                     </a>
+                                </li>
+                                {% endfor %}
                             </ul>
                             {%- endif -%}
                         </div>
@@ -107,4 +93,16 @@ content__main--flush-inner
         </div>
 
     </section>
+
+    <hr>
+
+    <section class="block">
+        {{ card_group.render( {
+            'heading': hardcoded.breakout_cards_heading,
+            'type_group': 'column-3',
+            'type_card': 'breakout',
+            'cards': hardcoded.breakout_cards
+        } ) }}
+    </section>
+
 {% endblock content_main %}
