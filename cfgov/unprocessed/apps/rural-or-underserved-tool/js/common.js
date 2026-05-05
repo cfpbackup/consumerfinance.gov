@@ -144,7 +144,7 @@ addressFormDom.addEventListener('submit', function (evt) {
 
 // When file upload is used.
 const fileChangeDom = document.querySelector('#file');
-fileChangeDom.addEventListener('input', function (event) {
+fileChangeDom.addEventListener('file-change', function (event) {
   let rowCount = 0;
   const fileElement = event.target;
 
