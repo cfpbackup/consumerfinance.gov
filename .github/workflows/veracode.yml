@@ -39,7 +39,7 @@ jobs:
           --veracode_api_id "$VERACODE_API_ID"
           --veracode_api_key "$VERACODE_API_KEY"
           --request_policy "$VERACODE_POLICY"
-        
+
           java -jar pipeline-scan.jar
           --veracode_api_id "$VERACODE_API_ID"
           --veracode_api_key "$VERACODE_API_KEY"
@@ -48,11 +48,6 @@ jobs:
           --app_id="cfgov"
           --summary_output true
 
-      - name: Archive Results.json & Results.txt from Veracode Static Pipeline Scanner
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-        with:
-          name: Veracode SAST Pipeline Results
-          path: results.*
   Veracode_SCA:
     runs-on:
       - ubuntu-latest
@@ -66,8 +61,3 @@ jobs:
         run: >
           curl -sSL https://download.sourceclear.com/ci.sh | sh -s scan
           --json=SCA-App-Issues.json
-      - name: Upload SCA issues artifact
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
-        with:
-          name: Veracode SCA Scan Results
-          path: SCA-App-Issues.json
