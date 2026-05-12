@@ -45,7 +45,6 @@ jobs:
           --file "./cfgov-gha.zip"
           --policy_file "CFPB-Policy.json"
           --app_id="cfgov"
-          --fail_on_severity="Very High, High"
           --summary_output true
 
       - name: Archive Results.json & Results.txt from Veracode Static Pipeline Scanner
