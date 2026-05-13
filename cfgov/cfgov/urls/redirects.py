@@ -14,7 +14,7 @@ perm(
 )
 
 # Remove the blog and redirect all blog posts to the landing page
-temp(r"(about-us/)?blog/.+", "/about-us/blog/")
+temp(r"(about-us/)?blog/(.+)", "/about-us/blog/?redirected_from=$2")
 
 # Permanent redirects that exceed Wagtail's 255-character limit for fields
 perm(
