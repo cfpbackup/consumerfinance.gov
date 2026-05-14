@@ -13,8 +13,8 @@ perm(
     "/enforcement/payments-harmed-consumers/payments-by-case/$1",
 )
 
-# Remove the blog and redirect all blog posts to the landing page
-temp(r"(about-us/)?blog/(.+)", "/about-us/blog/")
+# Temporarily redirect all blog posts to the blog landing page
+temp(r"(about-us/)?blog/.+", "/about-us/blog/")
 
 # Permanent redirects that exceed Wagtail's 255-character limit for fields
 perm(
