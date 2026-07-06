@@ -17,7 +17,7 @@
   },
   "browserslist": "> 0.2% in @cfpb/browserslist-config stats",
   "dependencies": {
-    "@cfpb/browserslist-config": "0.0.6",
+    "@cfpb/browserslist-config": "0.0.7",
     "@cfpb/cfpb-analytics": "0.3.2",
     "@cfpb/cfpb-design-system": "5.6.2",
     "@csstools/postcss-sass": "5.1.1",
@@ -75,5 +75,5 @@
     "cfgov/unprocessed/apps/*"
   ],
   "type": "module",
-  "packageManager": "yarn@4.16.0"
+  "packageManager": "yarn@4.17.0"
 }
