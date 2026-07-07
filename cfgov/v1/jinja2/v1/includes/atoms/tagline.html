@@ -14,7 +14,10 @@
   ========================================================================== #}
 
 {% macro render( is_large ) %}
-<cfpb-tagline{% if is_large %} islarge{% endif %}>
+{# TODO: The aria-label is set within the shadowdom, 
+   but isn't translated, so we're adding it again here for the translation. #}
+<cfpb-tagline{% if is_large %} islarge{% endif %}
+  aria-label="{{ _('Official website of the') }} {{ _('United States government') }}">
   {{ _('An official website of the') }}
   <span class="u-nowrap">{{ _('United States government') }}</span>
 </cfpb-tagline>
