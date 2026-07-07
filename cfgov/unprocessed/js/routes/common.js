@@ -4,9 +4,10 @@
 
 // GLOBAL ATOMIC ELEMENTS.
 
-import { CfpbFileUpload } from '@cfpb/cfpb-design-system';
+import { CfpbFileUpload, CfpbTagline } from '@cfpb/cfpb-design-system';
 
 CfpbFileUpload.init();
+CfpbTagline.init();
 
 // Organisms.
 import { Footer } from '../organisms/Footer.js';
