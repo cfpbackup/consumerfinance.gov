@@ -9,6 +9,7 @@ import {
   CfpbFileUpload,
   CfpbList,
   CfpbLink,
+  CfpbTagline,
 } from '@cfpb/cfpb-design-system';
 
 setSharedConfig({
@@ -18,6 +19,7 @@ setSharedConfig({
 CfpbFileUpload.init();
 CfpbList.init();
 CfpbLink.init();
+CfpbTagline.init();
 
 // Organisms.
 import { Footer } from '../organisms/Footer.js';
